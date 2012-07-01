@@ -1,0 +1,21 @@
+https://github.com/ruedigergad/QML-CPP_Interaction_Example
+Example on how to Exchange Data and Objects between C++ and QML and vice versa
+
+
+To build and run the example check out the this repository and build and run the example as follows:
+cd call_test
+qmake
+make
+./call_test
+
+
+You can find more information in the corresponding blog post:
+http://ruedigergad.com/2011/11/13/exchange-data-and-objects-between-c-and-qml-and-vice-versa/
+
+
+Copyright 2012, Ruediger Gad <r.c.g@gmx.de>
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/
+or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+
