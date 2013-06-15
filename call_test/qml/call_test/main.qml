@@ -64,10 +64,16 @@ Rectangle {
             console.log(d.vl[0].test)
             console.log(d.vl[1].test)
 
+            // When properties are set via C++, notification via sinals works as well.
+            // Note that for the sake of simplicity we trigger the change from the QML side.
+            console.log("")
+            aa.changeViaCpp("Called via QML but set in C++");
+
             Qt.quit()
         }
     }
-    A{id: aa; test: "bar"}
+    A{id: aa; test: "bar"
+      onTestChanged: console.log("QML got notfied of change to test: " + test)}
     A{id: aaa; test: "blah"}
     B{id: b}
     C{id: c; a: aa}

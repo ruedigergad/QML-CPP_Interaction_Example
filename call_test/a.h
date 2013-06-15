@@ -26,6 +26,10 @@ public:
         testChanged(myTest);
     }
 
+    Q_INVOKABLE void changeViaCpp(QString newValue) {
+        setTest(newValue);
+    }
+
 signals:
     void testChanged(QString t);
 
